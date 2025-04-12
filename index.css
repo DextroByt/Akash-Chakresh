@@ -43,6 +43,9 @@ header {
   letter-spacing: 2.5px;
   color: white;
   text-transform: uppercase;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -106,6 +109,9 @@ header {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content h1 span {
