@@ -43,6 +43,9 @@ header {
   letter-spacing: 2.5px;
   color: white;
   text-transform: uppercase;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -106,6 +109,9 @@ header {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content hr {
@@ -135,22 +141,70 @@ main {
   padding: 40px 0;
 }
 
-.main-section{
-    text-align: center;
-    margin-top: 100px;
-    padding: 60px 20px;
-  }
 
-.main-section h1 {
-    font-size: 50px;
-    color: #0026ff;
-    animation: blink 1s infinite alternate;
-  }
+/* Project Section  */
+.project-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  @keyframes blink {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-  }
+.project-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 95vw;
+}
+
+.project-col hr{
+  border: none;
+  border-top: 2px solid white;
+  width: 90%;
+  margin: 20px 0px;
+  
+}
+
+.project-desc{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.project-desc::-webkit-scrollbar {
+  display: none;
+}
+
+.project-img img{
+  min-width: 400px;
+  height: 275px;
+  margin-right: 20px ;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.project-card-1{
+  max-height: 300px;
+  display: flex;
+  margin: 20px;
+}
+
+.project-card-2{
+  max-height: 300px;
+  display: flex;
+  margin: 20px;
+}
+
+.project-desc a{
+  text-decoration: none;
+  color: #00aacc;
+  font-weight: 800px;
+}
+
+.project-img-mobile{
+  display: none;
+}
 
 .social-media-row {
   display: flex;
@@ -182,20 +236,19 @@ main {
 /* Gradient hover styles */
 .social-button.github:hover {
   background: linear-gradient(45deg, #333333, #0d9d5f);
-  border: none;
 }
 
-.social-button.linkedin:hover {
+.social-button.linkedin:hover{
   background: linear-gradient(45deg, #0e3a52, #00A0DC);
   border: none;
 }
 
-.social-button.twitter:hover {
+.social-button.twitter:hover{
   background: linear-gradient(45deg, #1DA1F2, #0d8ddb);
   border: none;
 }
 
-.social-button.email:hover {
+.social-button.email:hover{
   background: linear-gradient(45deg, #c850c0, #4158d0);
   border: none;
 }
@@ -207,9 +260,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
-  /* Optional padding around the section */
   box-sizing: border-box;
-  margin-top: 200px;
   margin-bottom: 0%;
 }
 
@@ -226,7 +277,9 @@ form {
 
 form h1 {
   text-align: center;
-  color: white;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
   font-size: 50px;
   margin-bottom: 50px;
@@ -235,6 +288,7 @@ form h1 {
 /* Full-width input fields inside input-row */
 form .input-row {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   width: 100%;
   margin-bottom: 30px;
@@ -277,7 +331,9 @@ form button {
   justify-content: center;
   align-items: center;
   color: black;
-  background: #00aacc;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -286,7 +342,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #00aacc;
+  scale: 1.1;
   color: black;
 }
 
@@ -305,6 +361,15 @@ form button:hover {
     display: flex;
     /* show below hero */
   }
+
+  .project-img{
+    display:none;
+  }
+
+  .project-img-mobile{
+    display: flex;
+  }
+
 
   header {
     padding: 15px;
@@ -440,8 +505,39 @@ form button:hover {
     display: none;
   }
 
+  /* Project Section  */
+
+
+  .project-card-1{
+    max-height: 400px;
+    font-size: 14px;
+  }
+
+  .project-card-1 h1{
+    color: #00c940e3;
+  }
+
+  .project-card-2{
+    max-height: 400px;
+    font-size: 14px;
+  }
+  .project-card-2 h1{
+    color: #009afad2;
+
+  }
+
+  .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,rgba(90, 90, 90, 0.563));
+    color: white;
+    padding-bottom: 10px;
+  }
+
+
   .contact {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   form {
@@ -499,6 +595,14 @@ form button:hover {
   .social-links-mobile {
     display: flex;
     /* show below hero */
+  }
+
+  .project-img{
+    display:none;
+  }
+
+  .project-img-mobile{
+    display: flex;
   }
 
   header {
@@ -625,9 +729,39 @@ form button:hover {
     font-size: 14px;
   }
 
+  /* Project Section  */
+
+
+  .project-card-1{
+    max-height: 350px;
+    font-size: 14px;
+  }
+
+  .project-card-1 h1{
+    color: #00c940e3;
+  }
+
+  .project-card-2{
+    max-height: 350px;
+    font-size: 14px;
+  }
+  .project-card-2 h1{
+    color: #009afad2;
+
+  }
+
+  .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,rgba(90, 90, 90, 0.563));
+    color: white;
+    padding-bottom: 10px;
+  }
+
 
   .contact {
-    margin-top: 120px;
+    margin-top: 40px;
   }
 
   form {
@@ -658,6 +792,14 @@ form button:hover {
   }
 
   .resume-btn-mobile {
+    display: flex;
+  }
+
+  .project-img{
+    display:none;
+  }
+
+  .project-img-mobile{
     display: flex;
   }
 
@@ -777,9 +919,34 @@ form button:hover {
     margin-top: 20px;
   }
 
+/* Project Section  */
+
+  .project-card-1{
+    max-height: 350px;
+  }
+  .project-card-1 h1{
+    color: #00c940e3;
+  }
+
+  .project-card-2{
+    max-height: 350px;
+  }
+  .project-card-2 h1{
+    color: #009afad2;
+
+  }
+
+  .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,rgba(90, 90, 90, 0.563));
+    color: white;
+    padding-bottom: 10px;
+  }
 
   .contact {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   form {
@@ -884,8 +1051,8 @@ form button:hover {
 
   /* Hero Section */
   .hero {
-    margin-top: 180px;
-    margin-bottom: 180px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .hero-content h1 {
@@ -910,8 +1077,43 @@ form button:hover {
     font-size: 16px;
   }
 
+
+  .project-img img{
+    min-width: 300px;
+    height: 250px;
+    margin-right: 20px ;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  
+  .project-card-1{
+    max-height: 300px;
+    display: flex;
+    margin: 20px;
+    font-size: 16px;
+  }
+  
+  .project-card-2{
+    max-height: 300px;
+    display: flex;
+    margin: 20px;
+    font-size: 16px;
+  }
+
+
+  .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,rgba(90, 90, 90, 0.563));
+    color: white;
+    padding-bottom: 10px;
+  }
+
+
   .contact {
-    margin-top: 180px;
+    margin-top: 50px;
   }
 
   form {
@@ -946,5 +1148,23 @@ form button:hover {
 
   .nav-menu{
     display: none;
+  }
+
+  .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,rgba(90, 90, 90, 0.563));
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  .project-img img{
+    min-width: 400px;
+    height: 270px;
+    margin-right: 20px ;
+    object-fit: contain;
+    object-position: center;
+    display: block;
   }
 }
