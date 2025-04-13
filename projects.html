@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +8,15 @@
   <link rel="stylesheet" href="projects.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
   <header>
+
+    <!-- Logo Section Section -->
     <div class="logo"><a href="index.html" style="text-decoration: none; color: white;">PROFESSIONAL PORTFOLIO</a></div>
     <nav class="navbar">
+
+      <!-- Social Links Section for Desktop -->
       <div class="social-links-desktop">
         <section class="social-media-row">
           <a href="https://github.com/DextroByt" target="_blank" class="social-button github">
@@ -25,14 +31,16 @@
             <i class="fab fa-twitter"></i>
             <span>Twitter</span>
           </a>
-          <a href="https://www.instagram.com/aakash_37" target="_blank"class="social-button email">
+          <a href="https://www.instagram.com/aakash_37" target="_blank" class="social-button email">
             <i class="fa-brands fa-instagram"></i>
             <span>Instagram</span>
           </a>
         </section>
       </div>
+
+      <!-- Menu Pop-up section -->
       <div class="nav-menu" id="navMenu">
-        <button onclick="toggleMenu()"><img src="Assets/Menu-icon.svg" ></button>
+        <button onclick="toggleMenu()"><img src="Assets/Menu-icon.svg"></button>
         <div class="nav-links">
           <button class="close-btn" onclick="toggleMenu()">×</button>
           <a href="index.html">Home</a>
@@ -46,23 +54,77 @@
           <a href="certifications.html">Certifications</a>
         </div>
       </div>
+
+
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-        <div class="hero-content">
-          <h1>Projects  </h1>
-          <hr />
-          <div class="hero-row">
-            <p>A cybersecurity enthusiast with a strong passion for technology and a solid foundation in understanding and addressing modern digital challenges.</p>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-    <section>
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>My <span>Projects</span></h1>
+        <hr />
+        <div class="hero-row">
+          <p>Explore a curated selection of my projects that showcase my expertise in cybersecurity and technology. Each project reflects my problem-solving mindset, commitment to innovation, and ability to tackle real-world digital challenges with impactful solutions.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Project Section : Use the Template for the first project to add the image and the description and in CSS for Specific Project you just need to apply the H1 and see the Project section for further details-->
+    <section class="project-section">
+      <div class="project-col">
+        <div class="project-card-1">
+          <div class="project-img">
+            <img src="Assets/LAMP-stack-img.png" >
+          </div>
+          <div class="project-desc">
+            <h1>LAMP Stack Implementation</h1>
+            <br>
+            <p>I recently completed a hands-on project where I implemented a LAMP Stack (Linux, Apache, MySQL, PHP) to host a website both locally and on the internet. This experience allowed me to dive deep into server management and web security. I configured Apache, secured PHP settings, implemented SSL encryption, and set up MySQL user permissions, all of which enhanced my understanding of key security practices.</p>
+            <br>
+            
+            <div class="hiddenContent" style="display:none;">
+              <p>As part of this project, I’ve documented the entire process in a comprehensive guide, which is available in PDF format. This guide outlines the steps to securely set up and host a website on a LAMP Stack, providing valuable insights into securing web applications, hardening servers, and managing databases. This experience has not only strengthened my technical skills but also improved my ability to identify and mitigate vulnerabilities, preparing me for future cybersecurity challenges.</p>
+              <br>
+              <p>You can refer to the PDF for a detailed walkthrough on how to set up your own secure LAMP Stack! <a href="Assets/LAMP-STACK.pdf">Click Here</a> </p>
+              <br>
+            </div>
+            <div class="see-more" onclick="toggleContent(this)" style=" cursor: pointer;" >See More</div>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- <div class="project-card-2">
+          <div class="project-img">
+            <img src="Assets/LAMP-stack-img.png" >
+          </div>
+          <div class="project-desc">
+            <h1>LAMP Stack Implementation</h1>
+            <br>
+            <p>I recently completed a hands-on project where I implemented a LAMP Stack (Linux, Apache, MySQL, PHP) to host a website both locally and on the internet. This experience allowed me to dive deep into server management and web security. I configured Apache, secured PHP settings, implemented SSL encryption, and set up MySQL user permissions, all of which enhanced my understanding of key security practices.</p>
+            <br>
+            
+            <div class="hiddenContent" style="display:none;">
+              <p>As part of this project, I’ve documented the entire process in a comprehensive guide, which is available in PDF format. This guide outlines the steps to securely set up and host a website on a LAMP Stack, providing valuable insights into securing web applications, hardening servers, and managing databases. This experience has not only strengthened my technical skills but also improved my ability to identify and mitigate vulnerabilities, preparing me for future cybersecurity challenges.</p>
+              <br>
+              <p>You can refer to the PDF for a detailed walkthrough on how to set up your own secure LAMP Stack! <a href="Assets/LAMP-STACK.pdf">Click Here</a> </p>
+              <br>
+            </div>
+            <div class="see-more" onclick="toggleContent(this)" style=" cursor: pointer;" >See More</div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+
+    <!-- Social links Section for Mobile  -->
+    <section>
       <div class="social-links-mobile">
         <section class="social-media-row">
           <a href="https://github.com/DextroByt" target="_blank" class="social-button github">
@@ -77,30 +139,31 @@
             <i class="fab fa-twitter"></i>
             <span>Twitter</span>
           </a>
-          <a href="https://www.instagram.com/aakash_37" target="_blank"class="social-button email">
+          <a href="https://www.instagram.com/aakash_37" target="_blank" class="social-button email">
             <i class="fa-brands fa-instagram"></i>
             <span>Instagram</span>
           </a>
         </section>
       </div>
-      
     </section>
-      <section class="main-section">
-        <h1>Updating Soon.....</h1>
-      </section>
 
+
+    <!-- Contact  Section -->
     <section class="contact">
-      <form>
+      <form action="https://formspree.io/f/moverrqn" method="POST" >
         <h1>Message Me</h1>
         <div class="input-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email"  name="email" placeholder="Your Email" required />
         </div>
-        <textarea placeholder="Your Message" required></textarea>
+        <textarea placeholder="Your Message" name="message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
-  </main>
+</main>
+
+
+  <!-- JavaScript Section -->
   <script>
     function toggleMenu() {
       const nav = document.getElementById('navMenu');
@@ -108,9 +171,23 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("fade-in");
-  });
+      document.body.classList.add("fade-in");
+    });
+
+    function toggleContent(element) {
+    const hiddenContent = element.previousElementSibling;
+    if (hiddenContent.style.display === "none") {
+      hiddenContent.style.display = "block";
+      element.textContent = "See Less";
+    } else {
+      hiddenContent.style.display = "none";
+      element.textContent = "See More";
+    }
+  }
+
+
   </script>
-  
+
 </body>
+
 </html>
