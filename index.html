@@ -135,6 +135,17 @@
     document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("fade-in");
   });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      setTimeout(() => {
+        form.reset();
+      }, 100); // slight delay to ensure form data is sent before clearing
+    });
+  });
+    
   </script>
   
 </body>
