@@ -369,7 +369,9 @@ form {
 
 form h1 {
   text-align: center;
-  color: white;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
   font-size: 50px;
   margin-bottom: 50px;
@@ -420,7 +422,9 @@ form button {
   justify-content: center;
   align-items: center;
   color: black;
-  background: #00aacc;
+  background: linear-gradient(90deg, #00ffc8, #007cf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -429,7 +433,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #00aacc;
+  scale: 1.1;
   color: black;
 }
 
